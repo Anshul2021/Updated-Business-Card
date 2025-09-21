@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Card Scanner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://aistudiocdn.com/react-image-crop@^11.0.6/dist/ReactCrop.css" />
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #f7f8fa; /* A slightly cooler off-white */
+        background-image: radial-gradient(circle at top, rgba(67, 137, 245, 0.04) 0%, transparent 40%),
+                          radial-gradient(circle at bottom right, rgba(203, 213, 225, 0.1) 0%, transparent 50%);
+        background-attachment: fixed;
+      }
+      .pulse-glow {
+        animation: pulse-glow 2.5s infinite ease-in-out;
+      }
+      @keyframes pulse-glow {
+        0%, 100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        }
+        50% {
+          transform: scale(1.02);
+          box-shadow: 0 0 20px 8px rgba(59, 130, 246, 0.15);
+        }
+      }
+      .shadow-up-md {
+        box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.05);
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .ReactCrop__rule-of-thirds-vt::before,
+      .ReactCrop__rule-of-thirds-vt::after,
+      .ReactCrop__rule-of-thirds-hz::before,
+      .ReactCrop__rule-of-thirds-hz::after {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      .ReactCrop__drag-handle {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 10px;
+        height: 10px;
+        box-sizing: border-box;
+        outline: 1px solid transparent;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.544.0",
+    "@lottiefiles/dotlottie-react": "https://aistudiocdn.com/@lottiefiles/dotlottie-react@^0.7.3",
+    "react-image-crop": "https://aistudiocdn.com/react-image-crop@^11.0.6"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/Updated-Business-Card/assets/index-ByDSxydR.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
